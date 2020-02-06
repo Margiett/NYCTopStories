@@ -19,23 +19,26 @@ class NewsFeedView: UIView {
     }()
     
     public lazy var collectionView: UICollectionView = {
-        //create flow layout for collection view
-        let layout = UICollectionViewLayout()
-        layout.scrollDirection = .vertical
-        let cv = UICollectionView(frame: CGRect.zero)
+        
+        let layout = UICollectionViewFlowLayout()
+       layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: 120, height: 200)
+
+    
+        let cv = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         return cv
     }()
     
-    
     override init(frame: CGRect) {
         super.init(frame: UIScreen.main.bounds)
+        commonInit()
     }
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        commonInit()
     }
-    private func commonInit() {
-        
-    }
+    
     private func commonInit(){
         setupCollectionView()
         setupSearchBarConstraints()
@@ -50,9 +53,10 @@ class NewsFeedView: UIView {
         searchBar.translatesAutoresizingMaskIntoConstraints = false
         
         //3.
-        //NSLayoutConstraints.active([
-        
-            
+        NSLayoutConstraint.activate([
+            searchBar.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            searchBar.leadingAnchor.constraint(equalTo: leadingAnchor),
+            searchBar.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
     

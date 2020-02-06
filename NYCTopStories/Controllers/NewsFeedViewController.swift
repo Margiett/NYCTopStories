@@ -17,7 +17,7 @@ class NewsFeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground //white when dark mode is off, and black when darkmode is on
+        view.backgroundColor = .systemBackground //MARK: white when dark mode is off, and black when darkmode is on
         
         
         //MARK: setting up collection datasource and delegate
@@ -39,7 +39,7 @@ extension NewsFeedViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "articleCell", for: indexPath)
         
-        //MARK: giving color to the cell 
+        //MARK: giving color to the cell
         cell.backgroundColor = .gray
         return cell
     }
