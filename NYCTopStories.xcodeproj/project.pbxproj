@@ -13,6 +13,9 @@
 		9F1B5C8E23EC6B58004FBCD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1B5C8C23EC6B58004FBCD0 /* LaunchScreen.storyboard */; };
 		9F1B5C9923EC6B58004FBCD0 /* NYCTopStoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1B5C9823EC6B58004FBCD0 /* NYCTopStoriesTests.swift */; };
 		9F1B5CA423EC6C32004FBCD0 /* TopStoriesTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1B5CA323EC6C32004FBCD0 /* TopStoriesTabController.swift */; };
+		9F1B5CA723EC6E70004FBCD0 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1B5CA623EC6E70004FBCD0 /* NewsFeedViewController.swift */; };
+		9F1B5CA923EC6E8F004FBCD0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1B5CA823EC6E8F004FBCD0 /* SettingsViewController.swift */; };
+		9F1B5CAB23EC6EBE004FBCD0 /* SavedArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1B5CAA23EC6EBE004FBCD0 /* SavedArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		9F1B5C9823EC6B58004FBCD0 /* NYCTopStoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCTopStoriesTests.swift; sourceTree = "<group>"; };
 		9F1B5C9A23EC6B58004FBCD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1B5CA323EC6C32004FBCD0 /* TopStoriesTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesTabController.swift; sourceTree = "<group>"; };
+		9F1B5CA623EC6E70004FBCD0 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		9F1B5CA823EC6E8F004FBCD0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9F1B5CAA23EC6EBE004FBCD0 /* SavedArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,12 @@
 		9F1B5C8023EC6B52004FBCD0 /* NYCTopStories */ = {
 			isa = PBXGroup;
 			children = (
-				9F1B5C8123EC6B52004FBCD0 /* AppDelegate.swift */,
-				9F1B5C8323EC6B52004FBCD0 /* SceneDelegate.swift */,
 				9F1B5CA323EC6C32004FBCD0 /* TopStoriesTabController.swift */,
-				9F1B5C8A23EC6B58004FBCD0 /* Assets.xcassets */,
-				9F1B5C8C23EC6B58004FBCD0 /* LaunchScreen.storyboard */,
 				9F1B5C8F23EC6B58004FBCD0 /* Info.plist */,
+				9F1B5CA623EC6E70004FBCD0 /* NewsFeedViewController.swift */,
+				9F1B5CAA23EC6EBE004FBCD0 /* SavedArticleViewController.swift */,
+				9F1B5CA823EC6E8F004FBCD0 /* SettingsViewController.swift */,
+				9F1B5CA523EC6E10004FBCD0 /* Supporting Files */,
 			);
 			path = NYCTopStories;
 			sourceTree = "<group>";
@@ -94,6 +100,17 @@
 				9F1B5C9A23EC6B58004FBCD0 /* Info.plist */,
 			);
 			path = NYCTopStoriesTests;
+			sourceTree = "<group>";
+		};
+		9F1B5CA523EC6E10004FBCD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F1B5C8A23EC6B58004FBCD0 /* Assets.xcassets */,
+				9F1B5C8C23EC6B58004FBCD0 /* LaunchScreen.storyboard */,
+				9F1B5C8323EC6B52004FBCD0 /* SceneDelegate.swift */,
+				9F1B5C8123EC6B52004FBCD0 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +216,9 @@
 				9F1B5C8223EC6B52004FBCD0 /* AppDelegate.swift in Sources */,
 				9F1B5CA423EC6C32004FBCD0 /* TopStoriesTabController.swift in Sources */,
 				9F1B5C8423EC6B52004FBCD0 /* SceneDelegate.swift in Sources */,
+				9F1B5CA923EC6E8F004FBCD0 /* SettingsViewController.swift in Sources */,
+				9F1B5CAB23EC6EBE004FBCD0 /* SavedArticleViewController.swift in Sources */,
+				9F1B5CA723EC6E70004FBCD0 /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
