@@ -28,7 +28,16 @@ class NewsFeedViewController: UIViewController {
         newsFeedView.collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "articleCell")
       
     }
-    
+    private func fetchStories(for section: String = "Technology") {
+        NYTopStoriesAPIClient.fetchTopStories(for: section) { (result) in
+            switch result {
+            case .failure(let appError):
+                print("error fetching stories: \(appError)")
+            case .success(let articles):
+                print("found \(articles.count)")
+            }
+        }
+    }
 }
 
 extension NewsFeedViewController: UICollectionViewDataSource {
